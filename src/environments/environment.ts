@@ -1,4 +1,7 @@
+//export const environment = {
+//  production: false,
+//  apiUrl: 'https://angular-todo-mongodb-backend-production.up.railway.app/api/auth'
 export const environment = {
-  production: false,
-  apiUrl: 'https://angular-todo-mongodb-backend-production.up.railway.app/api/auth'
+  production: true,
+  apiUrl: 'https://angular-todo-mongodb-backend-production.up.railway.app/api'
 };

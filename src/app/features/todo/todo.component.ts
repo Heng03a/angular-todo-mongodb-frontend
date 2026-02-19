@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TodoService } from './todo.service';
 import { Todo } from './todo.model';
+import { finalize } from 'rxjs/operators';
 
 /* ======================
    TYPES
@@ -45,6 +46,7 @@ export class TodoComponent implements OnInit {
   filterOption: FilterOption = 'all';
 
   constructor(private todoService: TodoService) {}
+loading = false;
 
   /* ======================
      LIFECYCLE
@@ -72,19 +74,24 @@ export class TodoComponent implements OnInit {
   /* ======================
      ADD
      ====================== */
-  addTask(): void {
-    const text = this.newTask.trim();
-    if (!text) return;
+ addTask(): void {
+  const text = this.newTask.trim();
+  if (!text) return;
 
-    this.todoService.createTodo(text).subscribe({
+  this.loading = true;
+
+  this.todoService.createTodo(text)
+    .pipe(finalize(() => this.loading = false))
+    .subscribe({
       next: () => {
         this.newTask = '';
         this.loadTodos(); // backend is source of truth
       },
-      error: (err) => console.error('Create error:', err)
+      error: (err) => {
+        console.error('Create error:', err);
+      }
     });
-  }
-
+}
   /* ======================
      TOGGLE COMPLETE
      ====================== */
