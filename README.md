@@ -1,59 +1,146 @@
-# AngularTodoApp
+# 🚀 Angular Todo – Distributed Full-Stack Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+A distributed full-stack application demonstrating secure authentication, 
+scalable API architecture, and cloud-based deployment.
 
-## Development server
+## 🔍 Overview
 
-To start a local development server, run:
+This project is a production-oriented distributed web application built with **Angular (SPA frontend)** and **Node.js + Express (REST API backend)**, backed by **MongoDB Atlas**.
 
-```bash
-ng serve
+The system demonstrates real-world engineering practices including:
+
+* JWT-based stateless authentication
+* Secure cross-origin communication (CORS configuration)
+* Cloud-based distributed deployment
+* Clean API architecture
+* Separation of concerns
+* Scalable client-server design
+
+Frontend and backend are independently deployed, simulating a real cloud-hosted microservice-style architecture.
+
+---
+
+## 🌐 Live Demo
+
+* 🔗 **Frontend (Vercel):**
+* 🔗 **Backend API (Railway / Cloud Host):**
+* 🔗 **Frontend Repository:**
+* 🔗 **Backend Repository:**
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* Angular
+* TypeScript
+* RxJS
+* Responsive CSS (Flexbox)
+
+### Backend
+
+* Node.js
+* Express.js
+* RESTful API design
+
+### Database
+
+* MongoDB Atlas (Cloud-hosted NoSQL database)
+
+### Authentication
+
+* JWT (JSON Web Token)
+* Stateless session management
+
+### Deployment
+
+* Vercel (Frontend)
+* Railway (Backend)
+* Distributed cloud architecture
+
+---
+
+## ✨ Core Features
+
+* Secure user authentication (Register / Login)
+* JWT-based authorization via HTTP headers
+* RESTful API with structured routing
+* Full CRUD task management
+* Real-time UI updates
+* Task filtering & sorting logic
+* Responsive mobile-first layout
+* Cross-origin secured communication
+* Modular project structure for maintainability
+
+---
+
+## 🏗 Architecture Overview
+
+This application follows a distributed client-server model:
+
+```
+Angular SPA (Frontend)
+        ↓
+Secure HTTP Requests (JWT in Authorization Header)
+        ↓
+Node.js / Express REST API (Backend)
+        ↓
+MongoDB Atlas (Cloud Database)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Architectural Principles
 
-## Code scaffolding
+* Frontend and backend deployed independently
+* Stateless backend architecture
+* API-first design
+* Clear separation between presentation, business logic, and data layers
+* Environment-based configuration management
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🔐 Security Considerations
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* JWT stored and transmitted securely via Authorization headers
+* CORS explicitly configured to allow trusted origins only
+* Environment variables used for sensitive configuration
+* Stateless authentication improves scalability and security
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🧩 Maintainability
 
-To build the project run:
+* Modular Angular component architecture
+* Service-based API abstraction
+* Backend controller-model separation
+* Centralized error handling
+* Clean folder structure
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📈 Scalability Design
 
-## Running unit tests
+* Stateless backend supports horizontal scaling
+* Cloud-hosted MongoDB Atlas
+* Frontend and backend independently scalable
+* API abstraction enables future frontend replacement (e.g., React / Next.js)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 📱 Responsive & Cross-Browser Validation
 
-## Running end-to-end tests
+* Mobile-first UI design
+* Flexbox-based layout
+* Tested on Chrome, Edge, Firefox
+* Responsive container constraints
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🚀 Future Enhancements
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Unit testing with Jest
+* Role-based access control (RBAC)
+* API rate limiting
+* CI/CD automation
+* Docker containerization
+* Storybook component documentation
