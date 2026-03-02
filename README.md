@@ -102,24 +102,27 @@ The system demonstrates real-world engineering practices including:
 - This application follows a distributed client-server model/architecture :
 
 ```
-* Angular SPA (Frontend)
-*        ↓
-* Secure HTTP Requests (JWT in Authorization Header)
-*        ↓
-* Node.js / Express REST API (Backend)
-*        ↓
-* MongoDB Atlas (Cloud Database)
+ Angular SPA (Frontend)
+        ↓
+ Secure HTTP Requests (JWT in Authorization Header)
+        ↓
+ Node.js / Express REST API (Backend)
+        ↓
+ MongoDB Atlas (Cloud Database)
 ```
 
-High-Level Flow
-*[ Browser ] ↓ [ Angular Frontend ] ↓ [ REST API - Node/Express ] ↓ [ Cloud Database ] 
-*[ Browser ]
-*      ↓
-*[ Angular Frontend (Vercel) ]
-*      ↓
-*[ Node.js REST API (Cloud) ]
-*      ↓
-*[ Managed Cloud Database ]
+- High-Level Flow
+
+```
+[ Browser ] ↓ [ Angular Frontend ] ↓ [ REST API - Node/Express ] ↓ [ Cloud Database ] 
+[ Browser ]
+      ↓
+[ Angular Frontend (Vercel) ]
+      ↓
+[ Node.js REST API (Cloud) ]
+      ↓
+[ Managed Cloud Database ]
+```
 
 ### Frontend Architecture (Angular)
 * Component-based UI structure
