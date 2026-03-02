@@ -220,6 +220,15 @@ This is standard industry practice for scalable web applications.
 - Flexbox-based layout
 - Overcome Responsive container constraints
 
+### Desktop View
+![Desktop Screenshot](docs/proof/Responsive/Desktop.png)
+
+### Tablet View
+![Tablet Screenshot](docs/proof/Responsive/Tablet.png)
+
+### Mobile View
+![Mobile Screenshot](docs/proof/Responsive/Mobile.png)
+
 ## 📱 Responsive Design Implementation
 This application was built using a mobile-first design philosophy.
 Core Responsive Characteristics
