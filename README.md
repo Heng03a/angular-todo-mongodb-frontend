@@ -117,9 +117,9 @@ The system demonstrates real-world engineering practices including:
 [ Browser ] ↓ [ Angular Frontend ] ↓ [ REST API - Node/Express ] ↓ [ Cloud Database ] 
 [ Browser ]
       ↓
-[ Angular Frontend (Vercel) ]
+[ Angular Frontend (Vercel Cloud) ]
       ↓
-[ Node.js REST API (Cloud) ]
+[ Node.js/Express REST API Backend (Cloud) ]
       ↓
 [ Managed Cloud Database ]
 ```
@@ -130,15 +130,15 @@ The system demonstrates real-world engineering practices including:
 * Environment configuration (environment.ts)
 * Clean separation of presentation and data logic
 * Mobile-first CSS layout strategy
-*Key folders:
-*src/
+* Key folders:
+* src/
 * ├── app/
 * │   ├── components/
 * │   ├── services/
 * │   └── models/
 * ├── environments/
 
-*src/ ├── app/ │ ├── components/ │ ├── services/ │ └── models/ ├── environments/ 
+* src/ ├── app/ │ ├── components/ │ ├── services/ │ └── models/ ├── environments/ 
 * Backend Architecture (Node.js + Express)
 * RESTful API endpoints
 * Middleware configuration (CORS, JSON parsing)
