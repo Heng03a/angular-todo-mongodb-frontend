@@ -249,56 +249,59 @@ This is standard industry practice for scalable web applications.
 The layout maintains structural integrity across device sizes.
 
 ## 🎯 Feature Set
-Functional Features
-• Add new tasks
-• Edit existing tasks
-• Delete tasks
-• Mark complete / undo
-• Sort by: 
-• Newest
-• Oldest
-• Completed First
-• Active First
-UX Enhancements
-• Status indicator legend
-• Stable button alignment
-• Clear visual hierarchy
-• Clean typography and spacing
+### Functional Features
+* Add new tasks
+* Edit existing tasks
+* Delete tasks
+* Mark complete / undo
+* Sort by: 
+* Newest
+* Oldest
+* Completed First
+* Active First
+
+### UX Enhancements
+* Status indicator legend
+* Stable button alignment
+* Clear visual hierarchy
+* Clean typography and spacing
 
 ## 🌐 Cross-Browser Compatibility
 
 ## ☁️ Cloud Deployment & CI/CD
 Deployment Flow
-• Local development
-• git add, git commit, git push
-• Vercel auto-build triggered
-• Backend auto-deployed
-• Production URL updated
-No manual server management required.
-Production Characteristics
-• Always available (24/7)
-• Serverless frontend hosting
-• Managed backend runtime
-• Managed database
-• Automatic build pipeline
+* Local development
+* git add, git commit, git push
+* Vercel auto-build triggered
+* Backend auto-deployed
+* Production URL updated
+- No manual server management required.
+* Production Characteristics
+* Always available (24/7)
+* Serverless frontend hosting
+* Managed backend runtime
+* Managed database
+* Automatic build pipeline
 
-▶️ Run Locally
-Frontend
-npm install 
-Access:
-http://localhost:4200
+### ▶️ Run Locally
+* Frontend
+* npm install 
+* Access:
+* http://localhost:4200
 
-Back-end 
-npm install node server.js 
-Access:
-http://localhost:3000
+### Back-end 
+* npm install node server.js 
+* Access:
+* http://localhost:3000
 
 ## 🔐 Production Considerations
-• CORS properly configured for production origin
-• Environment-based API endpoints
-• Secrets not committed to repository
-• Scalable deployment pattern
+* CORS properly configured for production origin
+* Environment-based API endpoints
+* Secrets not committed to repository
+* Scalable deployment pattern
+
 ---
+
 ## 🚀 Future Enhancements - 🚀 Challenges & Solutions
 * Unit testing with Jest
 * Role-based access control authorization (RBAC)
