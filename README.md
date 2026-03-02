@@ -22,13 +22,13 @@ The system demonstrates real-world engineering practices including:
 
 ### Frontend and backend are independently deployed, simulating a real cloud-hosted 
 ### microservice-style architecture.
-*Responsive • JWT-Ready • Cloud-Deployed • Dual-Mode Environment
-*Live Production URL: https://angular-todo-mongodb-frontend.vercel.app/login
-*Backend API URL: https://angular-todo-mongodb-backend-production.up.railway.app/
-*A production-oriented full-stack Todo application built with Angular and Node.js, 
-*designed with mobile-first responsive principles and deployed to the cloud with CI/CD automation.
-*This project demonstrates frontend engineering discipline, backend API integration, 
-*environment-based configuration, and real production deployment practices.
+* Responsive • JWT-Ready • Cloud-Deployed • Dual-Mode Environment
+* Live Production URL: https://angular-todo-mongodb-frontend.vercel.app/login
+* Backend API URL: https://angular-todo-mongodb-backend-production.up.railway.app/
+* A production-oriented full-stack To application built with Angular and Node.js, 
+* designed with mobile-first responsive principles and deployed to the cloud with CI/CD automation.
+* This project demonstrates frontend engineering discipline, backend API integration, 
+* environment-based configuration, and real production deployment practices.
 
 ### This application provides a complete Todo management system featuring:
 * Task creation, editing, deletion
@@ -38,8 +38,8 @@ The system demonstrates real-world engineering practices including:
 * Cloud deployment with 24/7 availability
 * Environment-based local + production modes
 
-### The system is architected to simulate a real production web application rather than 
-a simple frontend demo.
+### The system is architected to simulate a real production web application 
+### rather than a simple frontend demo.
 
 ## 🌐 Live Demo
 
