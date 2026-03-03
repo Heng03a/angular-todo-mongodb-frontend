@@ -138,8 +138,7 @@ The system demonstrates real-world engineering practices including:
 * │   └── models/
 * ├── environments/
 
-* src/ ├── app/ │ ├── components/ │ ├── services/ │ └── models/ ├── environments/ 
-* Backend Architecture (Node.js + Express)
+### Backend Architecture (Node.js + Express)
 * RESTful API endpoints
 * Middleware configuration (CORS, JSON parsing)
 * Modular route/controller structure
