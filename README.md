@@ -281,13 +281,13 @@ The layout maintains structural integrity across device sizes.
 
 ## 📱 Cross-browser Reliability Proof
 ### Google Chrome
-![Google Chrome Screenshot](docs/proof/Cross-browser/Google Chrome.png)
+![Google Chrome Screenshot](docs/proof/cross-browser/Google_Chrome.png)
 
 ### Microsoft Edge
-![Microsoft Edge Screenshot](docs/proof/Cross-browser/Microsoft Edge.png)
+![Microsoft Edge Screenshot](docs/proof/cross-browser/Microsoft_Edge.png)
 
 ### Firefox
-![Firefox Screenshot](docs/proof/Cross-browser/Firefox.png)
+![Firefox Screenshot](docs/proof/cross-browser/Firefox.png)
 
 ## ☁️ Cloud Deployment & CI/CD
 Deployment Flow
