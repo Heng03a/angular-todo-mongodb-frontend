@@ -279,6 +279,7 @@ The layout maintains structural integrity across device sizes.
 
 All layout and interactive functionality are working consistently across modern browsers.
 ```
+## 📱 Cross-browser Reliability Proof
 ### Google Chrome
 ![Google Chrome Screenshot](docs/proof/Cross-browser/Google Chrome.png)
 
