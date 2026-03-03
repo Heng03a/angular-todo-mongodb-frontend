@@ -149,7 +149,7 @@ The system demonstrates real-world engineering practices including:
 ## 🔄 3. Dual-Mode Environment Configuration
 * This application supports two operational modes:
 
-###🟢 Development Mode (Fully Local Stack)
+🟢 Development Mode (Fully Local Stack)
 * Angular runs via ng serve
 * Backend runs via node server.js
 * Data stored in local database
@@ -270,15 +270,15 @@ The layout maintains structural integrity across device sizes.
 * Clean typography and spacing
 
 ## 🌐 Cross-Browser Compatibility
-```
+
 -Tested on:
 
 - Google Chrome (latest)
 - Microsoft Edge (latest)
 - Firefox (latest)
 
-All layout and interactive functionality are working consistently across modern browsers.
-```
+-All layout and interactive functionality are working consistently across modern browsers.
+
 ## 📱 Cross-browser Reliability Proof
 ### Google Chrome
 ![Google Chrome Screenshot](docs/proof/Cross-browser/Google Chrome.png)
