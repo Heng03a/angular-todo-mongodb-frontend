@@ -43,8 +43,8 @@ The system demonstrates real-world engineering practices including:
 
 ## 🌐 Live Demo
 
-* 🔗 **Frontend (Vercel):**
-* 🔗 **Backend API (Railway / Cloud Host):**
+* 🔗 **Frontend (Vercel):** https://angular-todo-mongodb-frontend.vercel.app/login
+* 🔗 **Backend API (Railway / Cloud Host):** https://angular-todo-mongodb-backend-production.up.railway.app/
 
 ## 📂 Repository
 * 🔗 **GitHub Repository (Frontend):**
@@ -341,9 +341,6 @@ This project demonstrates:
 • API integration patterns
 
 - It represents a production-ready workflow rather than a static frontend demonstration.
-
-
-
 
 
 
