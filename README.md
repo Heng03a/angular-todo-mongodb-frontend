@@ -270,6 +270,23 @@ The layout maintains structural integrity across device sizes.
 * Clean typography and spacing
 
 ## 🌐 Cross-Browser Compatibility
+```
+-Tested on:
+
+- Google Chrome (latest)
+- Microsoft Edge (latest)
+- Firefox (latest)
+
+All layout and interactive functionality are working consistently across modern browsers.
+```
+### Google Chrome
+![Google Chrome Screenshot](docs/proof/Cross-browser/Google Chrome.png)
+
+### Microsoft Edge
+![Microsoft Edge Screenshot](docs/proof/Cross-browser/Microsoft Edge.png)
+
+### Firefox
+![Firefox Screenshot](docs/proof/Cross-browser/Firefox.png)
 
 ## ☁️ Cloud Deployment & CI/CD
 Deployment Flow
