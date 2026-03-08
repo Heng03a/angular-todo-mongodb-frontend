@@ -3,7 +3,7 @@
 - A distributed full-stack application demonstrating secure authentication, 
 - scalable API architecture, and cloud-based deployment.
 
-## 🔍 Overview
+## 🔍 Project Overview
 
 This project is a production-oriented distributed web application built with 
 
@@ -46,9 +46,9 @@ The system demonstrates real-world engineering practices including:
 * 🔗 **Frontend (Vercel):** https://angular-todo-mongodb-frontend.vercel.app/login
 * 🔗 **Backend API (Railway / Cloud Host):** https://angular-todo-mongodb-backend-production.up.railway.app/
 
-## 📂 Repository
-* 🔗 **GitHub Repository (Frontend):**
-* 🔗 **GitHub Repository (Backend):**
+## 📂 GitHub Repository
+* 🔗 **GitHub Repository (Frontend):** https://github.com/Heng03a/angular-todo-mongodb-frontend
+* 🔗 **GitHub Repository (Backend):** https://github.com/Heng03a/angular-todo-mongodb-backend
 
 ## 🛠 Tech Stack
 
@@ -175,7 +175,7 @@ The system demonstrates real-world engineering practices including:
 
 This is standard industry practice for scalable web applications.
 
-### Architectural Principles
+### Architectural - Engineering Principles Applied
 
 * Frontend and backend deployed independently
 * Stateless backend architecture
@@ -216,6 +216,23 @@ This is standard industry practice for scalable web applications.
 * MongoDB AtlasCloud-hosted storage
 * Frontend and backend independently horizontal scalable
 * API-first abstraction design enables future frontend React/Next.js replacement without backend rewrite
+
+### Responsive Design Strategy
+
+- This application uses a **mobile-first responsive CSS architecture**.
+
+* Base styles are designed for small screens without relying on media queries.
+* Layouts use flexible units (`rem`, `%`) and modern layout systems (`flexbox`) to adapt naturally across screen sizes.
+* Media queries are applied using `min-width` breakpoints to progressively enhance the interface for larger viewports.
+
+## Key design decisions include:
+
+* A global reset using `box-sizing: border-box` to ensure consistent layout calculations.
+* A responsive page wrapper with fluid width and controlled maximum width for desktop readability.
+* Vertical stacking for form controls on mobile, enhanced to horizontal layouts on larger screens.
+* Touch-friendly spacing and scalable typography to support usability on all devices.
+
+- This approach ensures the application works **anytime, anywhere, on any device**, - without duplicating layout logic or relying on device-specific assumptions.
 
 ## 📱 Responsive & Cross-Browser Validation
 * Mobile-first  UI design layout
@@ -279,16 +296,13 @@ The layout maintains structural integrity across device sizes.
 -All layout and interactive functionality are working consistently across modern browsers.
 
 ## 📱 Cross-browser Reliability Proof
-### Google Chrome
-![Google Chrome Screenshot](docs/proof/cross-browser/Google_Chrome.png)
 
-### Microsoft Edge
-![Microsoft Edge Screenshot](docs/proof/cross-browser/Microsoft_Edge.png)
+| Google Chrome | Microsoft Edge | Firefox |
+|---------------|----------------|---------|
+| ![Google Chrome Screenshot](docs/proof/cross-browser/Google_chrome.png) | ![Microsoft Edge Screenshot](docs/proof/cross-browser/Microsoft_edge.png) | ![Firefox Screenshot](docs/proof/cross-browser/Firefox.png) |
 
-### Firefox
-![Firefox Screenshot](docs/proof/cross-browser/Firefox.png)
 
-## ☁️ Cloud Deployment & CI/CD
+## Deployment Details - ☁️ Cloud Deployment & CI/CD
 Deployment Flow
 * Local development
 * git add, git commit, git push
@@ -309,7 +323,7 @@ Deployment Flow
 * Access:
 * http://localhost:4200
 
-### Back-end 
+* Back-end 
 * npm install node server.js 
 * Access:
 * http://localhost:3000
@@ -320,7 +334,7 @@ Deployment Flow
 * Secrets not committed to repository
 * Scalable deployment pattern
 
----
+- It represents a production-ready workflow rather than a static frontend demonstration.---
 
 ## 🚀 Future Enhancements - 🚀 Challenges & Solutions
 * Unit testing with Jest
@@ -334,12 +348,27 @@ Deployment Flow
 This project demonstrates:
 * Real full-stack integration
 * Clean environment separation
+
 * Responsive UI discipline
 * CI/CD deployment workflow
 * Production hosting knowledge
-• API integration patterns
+* API integration patterns
 
-- It represents a production-ready workflow rather than a static frontend demonstration.
+## Application Built and maintained by :-
+
+Jialumen (Phua Kia Heng)
+
+Full Stack Web Developer
+Singapore
+
+GitHub: https://github.com/Heng03a
+
+
+
+
+
+
+
 
 
 
