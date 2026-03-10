@@ -237,7 +237,7 @@ This is standard industry practice for scalable web applications.
 ## 📱 Responsive & Cross-Browser Validation
 * Mobile-first  UI design layout
 
-## 📱 Responsive Design Proof
+## 📱 Responsive Design Validation - Proof
 - Tested on Chrome, Edge, Firefox
 - Flexbox-based layout
 - Overcome Responsive container constraints
@@ -328,13 +328,15 @@ Deployment Flow
 * Access:
 * http://localhost:3000
 
+
+
 ## 🔐 Production Considerations
 * CORS properly configured for production origin
 * Environment-based API endpoints
 * Secrets not committed to repository
 * Scalable deployment pattern
 
-- It represents a production-ready workflow rather than a static frontend demonstration.---
+- It represents a production-ready workflow rather than a static frontend demonstration.
 
 ## 🚀 Future Enhancements - 🚀 Challenges & Solutions
 * Unit testing with Jest
