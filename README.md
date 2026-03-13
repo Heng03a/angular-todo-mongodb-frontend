@@ -11,7 +11,7 @@ This project is a production-oriented distributed web application built with
 backed by **MongoDB Atlas**.
 
 The system demonstrates real-world engineering practices including:
-
+cla
 * JWT-based stateless authentication
 * Secure cross-origin communication (CORS configuration)
 * Cloud-based distributed deployment
@@ -92,6 +92,26 @@ The system demonstrates real-world engineering practices including:
 * Cross-origin secured communication
 * Modular and clean project folder structure for maintainability
 
+
+## 📸 Screenshots - ✨ Key Functional Features
+
+**Add Task**  
+![Add Task](screenshots/add-task.png)
+
+**Task Completed**  
+![Task Completed](screenshots/task-complete.png)
+
+
+**Sort Completed Task First**  
+![Clear Completed Task](screenshots/sort_completed_first.png)
+
+**Delete task**  
+![Clear Completed Task](screenshots/delete-task.png)
+
+---
+
+
+
 ## 🧠 Architecture / Logic Design
 - Authentication: JWT (JSON Web Token)
 - Deployment: Vercel (Frontend), Railway (Backend)
@@ -145,10 +165,10 @@ The system demonstrates real-world engineering practices including:
 * Environment-based configuration
 * Cloud deployment ready
 
-## 🔄 3. Dual-Mode Environment Configuration
+### 🔄 Dual-Mode Environment Configuration
 * This application supports two operational modes:
 
-🟢 Development Mode (Fully Local Stack)
+### 🟢 Development Mode (Fully Local Stack)
 * Angular runs via ng serve
 * Backend runs via node server.js
 * Data stored in local database
@@ -157,7 +177,7 @@ The system demonstrates real-world engineering practices including:
 * Configuration:
 *  // environment.ts export const environment = { production: false, apiBaseUrl: 'http://localhost:3000/api' }; 
 
-## 🔵 Production Mode (Cloud Hosted)
+### 🔵 Production Mode (Cloud Hosted)
 * Frontend deployed to Vercel
 * Backend deployed to cloud hosting platform
 * Database hosted in managed cloud service
@@ -175,7 +195,7 @@ The system demonstrates real-world engineering practices including:
 
 This is standard industry practice for scalable web applications.
 
-### Architectural - Engineering Principles Applied
+## Architectural - Engineering Principles Applied - Key Engineering Decisions
 
 * Frontend and backend deployed independently
 * Stateless backend architecture
@@ -183,24 +203,24 @@ This is standard industry practice for scalable web applications.
 * Clear separation between presentation, business logic, and data layers
 * Environment-based configuration management
 
-## Separation of Concerns
+### Separation of Concerns
 - UI logic handled entirely in Angular components/services
 - API logic encapsulated in Express controllers
 - Database interactions isolated via model layer
 - Environment variables used for configuration isolation
 
-## CORS Configuration
+### CORS Configuration
 - Backend explicitly configures allowed origins to support secure cross-domain deployment between Vercel and Railway.
 - This mirrors real-world microservice communication patterns.
 
-## 🔐 Security Considerations
+### 🔐 Security Considerations
 
 * JWT stored and transmitted securely via Authorization headers
 * CORS explicitly configured to allow trusted origins only
 * Environment variables used for sensitive configuration
 * Stateless authentication improves scalability and security
 
-## 🧩 Maintainability Considerations
+### 🧩 Maintainability Considerations
 
 * Modular Angular component architecture
 * Service-based API abstraction
@@ -210,14 +230,124 @@ This is standard industry practice for scalable web applications.
 * Environment-based configuration
 * Clear separation between auth logic and business logic
 
-## 📈 Scalability Design
+### 📈 Scalability Design
 
 * Stateless backend supports horizontal scaling (JWT-based)
 * MongoDB AtlasCloud-hosted storage
 * Frontend and backend independently horizontal scalable
 * API-first abstraction design enables future frontend React/Next.js replacement without backend rewrite
 
-### Responsive Design Strategy
+
+## Reusable Application Template Architecture
+### Reusable Prototype-Oriented Architecture
+- The projects in this portfolio were intentionally structured to serve not only as standalone applications
+- but also as reusable templates for rapid application development.
+
+- By designing the applications with modular architecture and clear separation of concerns,
+- the codebase can be reused as a foundation for building new systems quickly while
+- maintaining architectural consistency.
+
+- This approach is commonly used in enterprise environments to accelerate the
+- development of new products and prototypes.
+
+### Why Reusable Templates Matter
+    - In real-world software development, new projects often require similar foundational components such as:
+      • Authentication mechanisms
+      • Database access layers
+      • API service structures
+      • UI layout frameworks
+      • Deployment configurations
+           
+      - Instead of rebuilding these components repeatedly, reusable templates enable developers
+      - to <b>bootstrap new applications rapidly while preserving engineering best practices.
+      - Benefits include:
+      -
+        • Faster prototype development</br>
+        • Consistent architectural standards</br>
+        • Reduced technical debt</br>
+        • Easier onboarding of development teams</br>
+      </p>
+ 
+
+## Engineering Challenges & Solutions
+   - Engineering Challenges & Solutions
+   - During development and deployment of the applications, 
+   - several real-world engineering challenges were encountered and resolved. 
+   - These challenges reflect common issues faced when building modern distributed web systems.
+
+   ### Challenge 1 — Cross-Origin Resource Sharing (CORS)
+     - Problem
+
+     - The Angular frontend and Node.js backend were deployed on separate cloud platforms. Because the services were hosted on different domains, browser security policies blocked API requests due to cross-origin restrictions.
+
+       - Example Deployment Architecture
+
+         - Frontend: Vercel
+         - Backend: Railway
+         - Without proper configuration, browser requests from the frontend application could not reach the backend API.
+
+    - Solution
+
+      - Explicit CORS configuration was implemented on the backend server to allow trusted origins while preserving browser security enforcement.
+
+      - app.use(cors({
+      - origin: [
+      - "https://your-vercel-app.vercel.app"
+      - ],
+      - credentials: true
+      - }));
+
+      - Engineering Outcome
+
+      - Secure communication between distributed frontend and backend services 
+      - was successfully established while maintaining strict browser security controls.
+
+   ### Challenge 2 — Cross-Browser Rendering Consistency
+       - Problem
+
+       - Different browsers implement layout engines differently, which can lead to subtle inconsistencies in CSS rendering and UI behaviour.
+
+       - Solution
+
+         - The applications were tested across multiple browser engines to verify layout consistency and interaction reliability.
+
+           - Google Chrome (Blink)
+           - Microsoft Edge (Blink)
+           - Mozilla Firefox (Gecko)
+           - Validation included:
+
+             - Authentication flows
+             - Task management UI
+             - Sorting and filtering behaviour
+             - Responsive layout scaling
+
+        - Engineering Outcome
+
+        - The application UI renders consistently across major browser engines, ensuring a stable user experience across platforms.
+
+   ### Challenge 3 — Responsive Layout Stability
+       - Problem
+  
+       - Modern web applications must remain usable across a wide range of device screen sizes. Without responsive design strategies, layouts can break on smaller devices.
+
+       - Solution
+
+         - Responsive design techniques were applied to ensure adaptive layouts across desktop, tablet, and mobile devices.
+
+         - Flexible layout containers
+         - Media query breakpoints
+         - Relative sizing units
+         - Mobile-first layout testing
+         - Layout behaviour was validated across screen widths ranging from 320px to 1440px 
+         - using browser developer tools and responsive testing.
+
+      - Engineering Outcome
+
+      - The interface remains fully functional and visually consistent across multiple device 
+      - categories and screen resolutions
+
+
+## Responsive Design Strategy
 
 - This application uses a **mobile-first responsive CSS architecture**.
 
@@ -225,7 +355,7 @@ This is standard industry practice for scalable web applications.
 * Layouts use flexible units (`rem`, `%`) and modern layout systems (`flexbox`) to adapt naturally across screen sizes.
 * Media queries are applied using `min-width` breakpoints to progressively enhance the interface for larger viewports.
 
-## Key design decisions include:
+### Key design decisions include:
 
 * A global reset using `box-sizing: border-box` to ensure consistent layout calculations.
 * A responsive page wrapper with fluid width and controlled maximum width for desktop readability.
@@ -237,21 +367,7 @@ This is standard industry practice for scalable web applications.
 ## 📱 Responsive & Cross-Browser Validation
 * Mobile-first  UI design layout
 
-## 📱 Responsive Design Validation - Proof
-- Tested on Chrome, Edge, Firefox
-- Flexbox-based layout
-- Overcome Responsive container constraints
-
-### Desktop View
-![Desktop Screenshot](docs/proof/Responsive/Desktop.png)
-
-### Tablet View
-![Tablet Screenshot](docs/proof/Responsive/Tablet.png)
-
-### Mobile View
-![Mobile Screenshot](docs/proof/Responsive/Mobile.png)
-
-## 📱 Responsive Design Implementation
+## 📱 Responsive Design Strategy and Implementation
 - This application was built using a mobile-first design philosophy.
 - Core Responsive Characteristics
 * Flexible layout containers
@@ -284,6 +400,20 @@ The layout maintains structural integrity across device sizes.
 * Stable button alignment
 * Clear visual hierarchy
 * Clean typography and spacing
+
+## 📱 Responsive Design Validation - Proof
+- Tested on Chrome, Edge, Firefox
+- Flexbox-based layout
+- Overcome Responsive container constraints
+
+### Desktop View
+![Desktop Screenshot](docs/proof/Responsive/Desktop.png)
+
+### Tablet View
+![Tablet Screenshot](docs/proof/Responsive/Tablet.png)
+
+### Mobile View
+![Mobile Screenshot](docs/proof/Responsive/Mobile.png)
 
 ## 🌐 Cross-Browser Compatibility
 
@@ -329,8 +459,7 @@ Deployment Flow
 * http://localhost:3000
 
 
-
-## 🔐 Production Considerations
+### 🔐 Production Considerations
 * CORS properly configured for production origin
 * Environment-based API endpoints
 * Secrets not committed to repository
